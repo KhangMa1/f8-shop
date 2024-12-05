@@ -1,0 +1,158 @@
+.header {
+  height: 120px;
+  background-image: linear-gradient(0, #fe6433, #f53e2d);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar__list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.navbar__list-item {
+  margin: 0 8px;
+  position: relative;
+}
+
+.navbar__list-item,
+.navbar__list-item-link {
+  display: inline-block;
+  font-size: 1.4rem;
+  color: var(--white-color);
+  text-decoration: none;
+  font-weight: 300;
+}
+
+.navbar__list-item,
+.navbar__list-item-link,
+.navbar_icon {
+  display: inline-flex;
+  align-items: center;
+}
+
+.navbar__list-item:hover,
+.navbar__list-item-link:hover,
+.navbar__icon-link:hover,
+.navbar__icon:hover {
+  color: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+}
+
+.navbar__list-item--active-qr:hover .navbar__qr{
+  display: block;
+}
+
+.navbar__list-item--strong {
+  font-weight: 400;
+}
+
+.navbar__list-item--separate::after {
+  content: "";
+  display: block;
+  position: absolute; /* Bắt buộc phải có một cái thuộc tính ở lớp cha là postition */
+  border-left: 1px solid #fb9086;
+  height: 12px;
+  right: -9px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.navbar__icon {
+  color: var(--white-color);
+  font-size: 1.8rem;
+  margin: 0 4px;
+}
+
+.navbar__title--no-pointer {
+  cursor: text;
+  color: var(--white-color);
+}
+
+/* Header navbar QR code  */
+.navbar__qr {
+  background-color: var(--white-color);
+  width: 140px;
+  position: absolute;
+  left: 0;
+  top: 118%;
+  padding: 8px;
+  border-radius: 2px;
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
+  display: none;
+  animation: fadeIn ease-in 0.2s;
+}
+
+.navbar__qr::before{
+  position: absolute;
+  left: 0;
+  top: -16px;
+  width: 100%;
+  height: 20px;
+  content: "";
+  display: block;
+  /* background-color: blue; */
+}
+.navbar__qr-img {
+  width: 100%;
+}
+
+.navbar__qr-app {
+  display: flex;
+  justify-content: space-between;
+  margin: 8px;
+}
+
+/* .navbar__qr-link {
+  flex: 1;
+} */
+.navbar__qr-download-img {
+  width: 100%;
+  height: 11px;
+}
+
+/* Navbar css */
+.navbar__notify {
+  position: absolute;
+  top:118%;
+  width: 404px ;
+  border: 1px solid #D3D3D3;
+  background-color: var(--white-color);
+  right: 0;
+
+
+}
+.navbar__notify-header {
+  height: 40px;
+  background-color: var(--white-color);
+
+}
+.navbar__notify-header h3 {
+  color: #666;
+  margin: 0;
+  font-weight: 400;
+  font-size: 1.4rem;
+  
+}
+.navbar__notify-list {
+
+}
+.navbar__notify-item {
+
+}
+.navbar__notify-img {
+  height: 20px;
+}
+.navbar__notify-info {
+
+}
+.navbar__notify-name {
+
+}
+.navbar__notify-description {
+
+}

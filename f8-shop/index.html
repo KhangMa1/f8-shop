@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>F8 Shop</title>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"> -->
+    <link rel="stylesheet" href="./assests/css/reset.css" />
+    <link rel="stylesheet" href="./assests/css/base.css" />
+    <link rel="stylesheet" href="./assests/css/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="./assests/css/fonts/fontawesome-free-6.6.0-web/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- BEM -->
+    <div class="app">
+      <header class="header">
+        <div class="grid">
+          <nav class="navbar">
+            <ul class="navbar__list">
+              <li class="navbar__list-item 
+              navbar__list-item--active-qr 
+              navbar__list-item--separate">
+                Vào cửa hàng trong F8
+                <div class="navbar__qr">
+                  <img
+                    src="./assests/img/QR.png"
+                    alt="qr code"
+                    class="navbar__qr-img"
+                  />
+                  <div class="navbar__qr-app">
+                    <a href="" class="navbar__qr-link"
+                      ><img
+                        src="./assests/img/google play.png"
+                        alt=""
+                        class="navbar__qr-download-img"
+                    /></a>
+                    <a href="" class="navbar__qr-link"><img
+                      src="./assests/img/app store.png"
+                      alt=""
+                      class="navbar__qr-download-img"
+                    /></a
+                    >
+                  </div>
+                </div>
+              </li>
+              <li class="navbar__list-item">
+                <span class="navbar__title--no-pointer">Kết nối</span>
+                <a class="navbar__icon-link" href=""
+                  ><i class="navbar__icon fa-brands fa-facebook"></i
+                ></a>
+                <a class="navbar__icon-link" href=""
+                  ><i class="navbar__icon fa-brands fa-instagram"></i
+                ></a>
+              </li>
+            </ul>
+            <ul class="navbar__list">
+              <li class="navbar__list-item">
+                <a href="" class="navbar__list-item-link"
+                  ><i class="navbar__icon fa-solid fa-bell"></i>Thông báo</a
+                >
+                <div class="navbar__notify">
+                  <header class="navbar__notify-header">
+                    <h3>Thông báo mới nhận</h3>
+                 </header>
+                 <ul class="navbar__notify-list">
+                  <li class="navbar__notify-item">
+                    <a href="" class="header__notify-link">
+                      <img src="https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lsl3690xtrd0d8" alt="" class="navbar__notify-img">
+                        <div class="navbar__notify-info">
+                          <span class="navbar__notify-name">Mỹ phẩm</span>
+                          <span class="navbar__notify-description">Mô tả</span>
+                        </div>
+                    </a>
+                  </li>
+                 </ul>
+                </div>
+              </li>
+              <li class="navbar__list-item">
+                <a href="" class="navbar__list-item-link">Trợ giúp</a>
+              </li>
+              <li class="navbar__list-item navbar__list-item--strong">
+                Đăng ký
+              </li>
+              <li class="navbar__list-item navbar__list-item--strong">
+                Đăng nhập
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <div class="container"></div>
+      <footer class="footer"></footer>
+    </div>
+  </body>
+</html>

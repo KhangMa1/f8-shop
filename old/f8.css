@@ -1,0 +1,16 @@
+:root {
+  --text-color: red;
+}
+#title {
+  color: var(--text-color);
+  position: relative;
+  top: 0px;
+  left: 0px;
+}
+
+.banner {
+  background-image: url(https://www.gtrent.com/upload/images/modelli/ferrari/f8_tributo/Ferrari_F8_Tributo_4b.jpg
+  );
+  height: 100px;
+  width: 200px;
+}
