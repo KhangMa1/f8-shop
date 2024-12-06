@@ -117,15 +117,35 @@
 
 /* Navbar css */
 .navbar__notify {
+  display: none;
+
   position: absolute;
   top:118%;
   width: 404px ;
   border: 1px solid #D3D3D3;
   background-color: var(--white-color);
   right: 0;
-
+  cursor: default;
+  animation: zoomOut ease-in 0.25s;
+  transform-origin: 90% top;
 
 }
+
+@keyframes zoomOut{
+  from{
+    opacity: 0;
+    transform: scale(0);
+  }
+  to{
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.navbar__list-item-notify:hover .navbar__notify{
+  display: block;
+}
+
 .navbar__notify-header {
   height: 40px;
   background-color: var(--white-color);
@@ -143,13 +163,16 @@
 }
 .navbar__notify-item {
   display: flex;
+  background-color: rgba(245, 62, 45, 0.09);
+}
+.navbar__notify-item:hover{
+  background-color: #fafafa;
 }
 .navbar__notify-link{
   display: flex;
   padding: 12px;
   text-decoration: none;
   width: 100%;
-  background-color: rgba(245, 62, 45, 0.09);
 }
 .navbar__notify-img {
   width: 48px;
@@ -163,11 +186,23 @@ display: block;
 font-size: 1.4rem;
 font-weight: 400;
 color: var(--black-color);
+line-height: 2rem;
 }
 .navbar__notify-description {
 display: block;
 font-size: 1.2rem;
 color: #756F6E;
 line-height: 1.6rem;
+margin-top: 4px ;
+
 }
 
+.navbar__notify-footer{
+  text-align: center;
+}
+.navbar__notify-footer-btn{
+  text-decoration: none;
+  display: block;
+  color: var(--text-color);
+  padding: 16px ;
+}
